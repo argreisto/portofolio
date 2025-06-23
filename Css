@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #e0f7ff, #ffffff);
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+}
+
+header {
+  background: linear-gradient(135deg, #0077cc, #00bcd4);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.highlight {
+  color: #ffe600;
+}
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid white;
+  animation: typing 3s steps(40, end), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: white; }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+main {
+  padding: 40px 0;
+  animation: slideUp 1.5s ease-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+h2 {
+  color: #0077cc;
+  border-bottom: 2px solid #00bcd4;
+  padding-bottom: 5px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+ul li:hover {
+  transform: translateX(5px);
+  color: #0077cc;
+}
+
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  margin-top: 50px;
+  color: #555;
+}
